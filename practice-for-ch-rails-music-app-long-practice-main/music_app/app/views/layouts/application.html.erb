@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MusicApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application" %>
+  </head>
+#   unless logged_in?
+#   logout (sess)
+# else
+#   show href = new_user_url and href = new_session_url
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<h2>User Sign-Up Page</h2>
+
+<form  action="<%= users_url %>" method="POST">
+
+<label for="email">Email:
+    <input type="text" id="email" name="user[email]" value="<%= @user.email %>" >
+</label>
+<br/>
+
+<label for="password">Password:
+    <input type="password" id="password" name="user[password]" value=""> 
+</label>
+<br/>
+
+<input type="submit" value="Sign-Up">
+
+</form>
